@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
 import { AsideBarComponent} from './asidebar.component';
-
+import { HomeSearchComponent } from './homesearch.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
-  declarations: [ AppComponent,HeaderComponent,AsideBarComponent],
+  declarations: [ AppComponent,HeaderComponent,AsideBarComponent,HomeSearchComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
