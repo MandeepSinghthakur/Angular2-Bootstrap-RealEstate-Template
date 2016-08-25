@@ -46,7 +46,7 @@ Header{
 	position: fixed;
 	width: 100%;
 	color:#fff;
-  text-shadow: 1px 1px white;
+    text-shadow: 1px 1px white;
     font-size: 1.125em;
     text-shadow: .5px .5px 5px #000;
 }
@@ -59,7 +59,7 @@ Header{
     position: relative;
 }
 .header__black-linear-bg{
-	    background: #000;
+	background: #000;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), color-stop(50%, rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
     background: linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
@@ -74,7 +74,7 @@ Header{
 }
 header.open {
     height: 9.2em;
-       background :linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+    background :linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
   
 }
 header.header-version-b .header__black-bg {
@@ -102,7 +102,7 @@ header.header-version-b .header__black-bg {
 }
 
 .header-menu-icon{
-  margin-top: 1.2em; /*need to investigate*/
+    margin-top: 1.2em; /*need to investigate*/
 }
 
 
@@ -111,30 +111,30 @@ header.header-version-b .header__black-bg {
 }
 
 .logo-image img{
-	    vertical-align: text-bottom;
-	    height: 2.2em
+	vertical-align: text-bottom;
+	height: 2.2em
 }
 
 .logotitle{
-  font-size: 2.2em;
+   font-size: 2.2em;
 }
 
 .header-content .header-menu-icon, .header-content.header-right-links ul{
     display: inline-block;
-        font-size: 1.125em;
+    font-size: 1.125em;
     text-shadow: .5px .5px 5px #000;
 }
 
 .header-right-links li{
- float: left;
- list-style: none;
- padding-right: 1em;
+	float: left;
+	list-style: none;
+	padding-right: 1em;
 }
 
 /*Header Search*/
 .header-searchbar input{
 	background:transparent;
-	    background: rgba(255,255,255,0.15)
+	background: rgba(255,255,255,0.15)
 }
 .header-searchbar .form-control{
 	border:none;
@@ -154,17 +154,23 @@ header.header-version-b .header__black-bg {
     background :linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 1.4em;
+    color:#fff;
+    font-size: 1.125em;
+    text-shadow: .5px .5px 5px #000;
 }
-.body-nav-open{
+
+.sidenav .fa-times{
+   float: right;
+   padding:0 5px;
+}
+
+.nav-open{
 	-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    margin-left: 250px;
-}
-.nav-open{
-width: 250px;
+	width: 250px;
 }
 /*
 --------------------

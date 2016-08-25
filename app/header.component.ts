@@ -9,6 +9,8 @@ export class HeaderComponent {
 constructor() {
    
   }
+
+
   HeaderSearchClick() {
     $('.header__black-linear-bg').toggleClass('header-big');
     $('.header__black-linear-bg').toggleClass('header-small');
@@ -18,7 +20,7 @@ constructor() {
   }
   OpenSideBar(){
   	$('.sidenav').toggleClass('nav-open');
-    $('.page-wrapper').toggleClass('body-nav-open');
+   
     
   }
 

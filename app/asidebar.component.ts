@@ -9,5 +9,8 @@ export class AsideBarComponent {
 constructor() {
    
   }
+  closeSideBar(){
+  $('.sidenav').removeClass('nav-open');
+  }
   
 }

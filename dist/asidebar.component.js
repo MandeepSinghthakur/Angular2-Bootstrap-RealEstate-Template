@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 var AsideBarComponent = (function () {
     function AsideBarComponent() {
     }
+    AsideBarComponent.prototype.closeSideBar = function () {
+        $('.sidenav').removeClass('nav-open');
+    };
     AsideBarComponent = __decorate([
         core_1.Component({
             selector: 'jll-asidebar',

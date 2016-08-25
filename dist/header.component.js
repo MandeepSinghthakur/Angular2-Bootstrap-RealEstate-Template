@@ -21,7 +21,6 @@ var HeaderComponent = (function () {
     };
     HeaderComponent.prototype.OpenSideBar = function () {
         $('.sidenav').toggleClass('nav-open');
-        $('.page-wrapper').toggleClass('body-nav-open');
     };
     HeaderComponent = __decorate([
         core_1.Component({
