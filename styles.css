@@ -144,10 +144,12 @@ background:#dce0e0;
 }
 .header-right-links li{
 	border-left: 1px solid #dce0e0;
-	width:75px;
 }
 .header-section.text-left ul li:first-child{
 	border-right: 1px solid #dce0e0;
+}
+.header-section.text-left ul li{
+	height: 4.2em;
 }
 .header-right-links li a,.header-section.text-left ul li a{
 	padding:0 10px;
