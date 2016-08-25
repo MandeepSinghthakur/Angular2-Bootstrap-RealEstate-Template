@@ -3,31 +3,39 @@
       <div class="header__black-bg header-big"></div>
  <div class="outer-container-header">
 			<div class="row">
-				<div class="col-sm-4 header-section text-left">
+				<div class="col-xs-5 header-section text-left">
 				   <div class="header-content">
-				   	<div class="header-menu-icon" (click)="OpenSideBar()">
+				   <ul>
+				   	<li>
+				   		<a>
+				   			<div class="header-menu-icon" (click)="OpenSideBar()">
 				   		<i class="fa fa-bars" aria-hidden="true"></i>
 				   	</div>
-				   </div>
-				</div>
-				
-				<div class="col-sm-4 header-section text-center ">
-					<a href="#" class="logo header-content">
-					<span class="logo-image">
+				   		</a>
+				   	</li>
+				   	<li>
+				   		<a href="#" class="logo header-content">
+				   			<span class="logo-image">
 						<img  src="http://res.cloudinary.com/dld6s2gbh/image/upload/c_scale,w_40/v1471966865/comapanylogo.png"/>
 						</span>
 					<span class="logotitle">
 						JLL
 					</span>
-						
-					</a>
+				   		</a>		
+				   	</li>
+				   </ul>
+				   	
+				   	
+				   </div>
 				</div>
 				
-				<div class="col-sm-4 header-section text-right">
+				<div class="col-xs-7 header-section text-right">
 				 <div class="header-content header-right-links">
 				 	<ul>
-				 	<li class="lang"> English</li>
-				 	<li class="search" data-toggle="collapse" href="#collapseExample" (click)="HeaderSearchClick()"><i class="fa fa-search" aria-hidden="true"></i></li>
+				 	<li class="lang"><a> English </a></li>
+				 	<li class="search hidden-xs" data-toggle="collapse" href="#collapseExample" (click)="HeaderSearchClick()"><a><i class="fa fa-search" aria-hidden="true"></i>
+</a>
+				 	</li>
 				 	</ul>
 				 </div>
 				</div>			
