@@ -24,6 +24,7 @@ html{
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
 }
+
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #fff;
    opacity:  1;
@@ -35,6 +36,7 @@ html{
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #fff;
 }
+
 /*
 ----------------------------------
        Header Css
@@ -99,6 +101,11 @@ header.header-version-b .header__black-bg {
     text-decoration: none;
 }
 
+.header-menu-icon{
+  margin-top: 1.2em; /*need to investigate*/
+}
+
+
 .logo{
     height: 100%;
 }
@@ -112,7 +119,7 @@ header.header-version-b .header__black-bg {
   font-size: 2.2em;
 }
 
-.header-right-links ul{
+.header-content .header-menu-icon, .header-content.header-right-links ul{
     display: inline-block;
         font-size: 1.125em;
     text-shadow: .5px .5px 5px #000;
@@ -125,15 +132,40 @@ header.header-version-b .header__black-bg {
 }
 
 /*Header Search*/
-.searchbar input{
+.header-searchbar input{
 	background:transparent;
 	    background: rgba(255,255,255,0.15)
 }
-.searchbar .form-control{
+.header-searchbar .form-control{
 	border:none;
 }
 
+.header-search-wrapper{
+	width: 100%;
+}
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background :linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.body-nav-open{
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-left: 250px;
+}
+.nav-open{
+width: 250px;
+}
 /*
 --------------------
    Utility classes
@@ -169,4 +201,11 @@ header.header-version-b .header__black-bg {
 
 .input-group{
 	border:none;
+}
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+.fa {
+    font-size: 1.4em;
 }

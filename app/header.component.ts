@@ -10,10 +10,16 @@ constructor() {
    
   }
   HeaderSearchClick() {
-   $('.header__black-linear-bg').toggleClass('header-big');
+    $('.header__black-linear-bg').toggleClass('header-big');
     $('.header__black-linear-bg').toggleClass('header-small');
     $('.header__black-bg').toggleClass('header-big');
     $('.header__black-bg').toggleClass('header-small');
     $('header').toggleClass('open')
   }
+  OpenSideBar(){
+  	$('.sidenav').toggleClass('nav-open');
+    $('.page-wrapper').toggleClass('body-nav-open');
+    
+  }
+
 }

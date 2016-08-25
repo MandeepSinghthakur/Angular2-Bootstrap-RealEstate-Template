@@ -9,28 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HeaderComponent = (function () {
-    function HeaderComponent() {
+var AsideBarComponent = (function () {
+    function AsideBarComponent() {
     }
-    HeaderComponent.prototype.HeaderSearchClick = function () {
-        $('.header__black-linear-bg').toggleClass('header-big');
-        $('.header__black-linear-bg').toggleClass('header-small');
-        $('.header__black-bg').toggleClass('header-big');
-        $('.header__black-bg').toggleClass('header-small');
-        $('header').toggleClass('open');
-    };
-    HeaderComponent.prototype.OpenSideBar = function () {
-        $('.sidenav').toggleClass('nav-open');
-        $('.page-wrapper').toggleClass('body-nav-open');
-    };
-    HeaderComponent = __decorate([
+    AsideBarComponent = __decorate([
         core_1.Component({
-            selector: 'jll-header',
-            templateUrl: 'HtmlPartials/header.component.html'
+            selector: 'jll-asidebar',
+            templateUrl: 'HtmlPartials/asidebar.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], HeaderComponent);
-    return HeaderComponent;
+    ], AsideBarComponent);
+    return AsideBarComponent;
 }());
-exports.HeaderComponent = HeaderComponent;
-//# sourceMappingURL=header.component.js.map
+exports.AsideBarComponent = AsideBarComponent;
+//# sourceMappingURL=asidebar.component.js.map
