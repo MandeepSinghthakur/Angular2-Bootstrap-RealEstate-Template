@@ -134,12 +134,17 @@ header.header-version-b .header__black-bg {
 .header-right-links li,.header-section.text-left ul li{
 	float: left;
 	position: relative;
+	width:auto;
+ 	text-align: -webkit-center;
+ 	text-align: center;
 }
 .header-right-links li:hover,.header-section.text-left ul li:hover{
 background:#dce0e0;
+
 }
 .header-right-links li{
 	border-left: 1px solid #dce0e0;
+	width:75px;
 }
 .header-section.text-left ul li:first-child{
 	border-right: 1px solid #dce0e0;
@@ -238,10 +243,13 @@ background:#dce0e0;
 	.header-right-links li{
 		padding-right:.9em;
 	}
-	.header-content .header-menu-icon, .header-content.header-right-links ul{
+	Header, .header-content .header-menu-icon, .header-content.header-right-links ul{
 		font-size: .8em;
 	}
 	.logotitle {
     font-size: 1.5em;
+}
+.header-right-links li {
+    width: 50px;
 }
 }
