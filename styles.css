@@ -1,0 +1,172 @@
+
+/*Reset rule*/
+
+*{
+	padding: 0px;
+	margin:0px;
+}
+
+/*Reset default html tag styles */
+
+a:hover{
+	color: none;
+	text-decoration: none;
+}
+a{
+color:#fff;	
+}
+
+html{
+	 font-family: "Open Sans",sans-serif;
+	color:#000;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+/*
+----------------------------------
+       Header Css
+----------------------------------
+*/
+Header{
+	position: fixed;
+	width: 100%;
+	color:#fff;
+  text-shadow: 1px 1px white;
+    font-size: 1.125em;
+    text-shadow: .5px .5px 5px #000;
+}
+
+.outer-container-header{
+	padding: 0 .5em;
+	height: 100%;
+    margin: 0 auto;
+    max-width: 75em;
+    position: relative;
+}
+.header__black-linear-bg{
+	    background: #000;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), color-stop(50%, rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+    height: 5.5em;
+    left: 0;
+    position: absolute;
+    -webkit-transition: background .5s ease;
+    transition: background .5s ease;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+header.open {
+    height: 9.2em;
+       background :linear-gradient(to bottom,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+  
+}
+header.header-version-b .header__black-bg {
+    background: #000;
+    background: rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 3px 6px -2px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 6px -2px rgba(0,0,0,0.4);
+    height: 4.4em;
+    left: 0;
+    position: absolute;
+    -webkit-transition: background .5s ease;
+    transition: background .5s ease;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.header-section{
+	height: 4.4em;
+	vertical-align: middle;
+	line-height: 4.4em;
+}
+
+.header-content{
+    text-decoration: none;
+}
+
+.logo{
+    height: 100%;
+}
+
+.logo-image img{
+	    vertical-align: text-bottom;
+	    height: 2.2em
+}
+
+.logotitle{
+  font-size: 2.2em;
+}
+
+.header-right-links ul{
+    display: inline-block;
+        font-size: 1.125em;
+    text-shadow: .5px .5px 5px #000;
+}
+
+.header-right-links li{
+ float: left;
+ list-style: none;
+ padding-right: 1em;
+}
+
+/*Header Search*/
+.searchbar input{
+	background:transparent;
+	    background: rgba(255,255,255,0.15)
+}
+.searchbar .form-control{
+	border:none;
+}
+
+
+/*
+--------------------
+   Utility classes
+--------------------
+*/
+
+.text-left{
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.header-small{
+	display: block;
+}
+.header-big{
+	display: none;
+}
+
+/*--------------------------
+  Override Bootstrap classes
+----------------------------*/
+.input-group-addon{
+	background: transparent;
+    width: 1.1em;
+    color: #fff;
+    border:none;
+    background: rgba(255,255,255,0.15)
+}
+
+.input-group{
+	border:none;
+}

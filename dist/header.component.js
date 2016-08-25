@@ -12,6 +12,13 @@ var core_1 = require('@angular/core');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent.prototype.HeaderSearchClick = function () {
+        $('.header__black-linear-bg').toggleClass('header-big');
+        $('.header__black-linear-bg').toggleClass('header-small');
+        $('.header__black-bg').toggleClass('header-big');
+        $('.header__black-bg').toggleClass('header-small');
+        $('header').toggleClass('open');
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             selector: 'jll-header',
