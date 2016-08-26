@@ -12,7 +12,7 @@ a:hover{
 	color: #fff;
 	text-decoration: none;
 }
-a {
+a ,label {
 color:#fff;	
 }
 ol, ul{
@@ -60,7 +60,7 @@ Header{
 }
 
 .outer-container-header{
-	padding: 0 1.5em;
+	padding: 0;
 	height: 100%;
     margin: 0 auto;
     position: relative;
@@ -228,10 +228,14 @@ background:#dce0e0;
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.6)
     ),
-    url(http://res.cloudinary.com/dld6s2gbh/image/upload/v1472105021/home-clear.jpg);
+    url(http://res.cloudinary.com/dld6s2gbh/image/upload/v1472229079/TV_LA_Home_Desktop_kjcxbv.jpg);
     background-size: cover;
     background-position: center center;
     color: #fff;
+}
+.search-jumbotron .row {
+     margin-right: 0px; 
+     margin-left: 0px;
 }
 .search-container{
 	padding: 5em;
@@ -239,7 +243,9 @@ background:#dce0e0;
 
 .search-container form{
 border: 1px solid #fff;
-background: rgba(255, 255, 255, 0.40);
+    border-radius: 40px;
+    background: rgba(0, 0, 0, 0.3);
+
 }
 .search-container legend{
 	font-size: 2em;
@@ -253,6 +259,13 @@ background: rgba(255, 255, 255, 0.40);
 	    font-size: 1.2em;
 }
 
+#singlebutton{
+	width: 100%;
+}
+.map-container div{
+width: 100%; 
+height: 500px;
+}
 
 
 
@@ -277,8 +290,40 @@ background: rgba(255, 255, 255, 0.40);
 .fa {
     font-size: 1.4em;
 }
-
+/* label color */
+   .input-field label {
+     color: #fff;
+   }
+   /* label focus color */
+   .input-field input[type=search]:focus + label,.input-field input[type=text]:focus + label,.input-field input[type=tel]:focus + label,.input-field textarea.materialize-textarea:focus + label {
+     color: #fff;
+   }
+   /* label underline focus color */
+  input[type=search]:focus:not([readonly]),.input-field input[type=text]:focus,.input-field input[type=tel]:focus,.input-field textarea.materialize-textarea:focus {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #fff;
+     box-shadow: 0 1px 0 0 #fff;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #fff;
+   }
 /*Media Queries*/
+@media screen and (min-width: 768px){
+.jumbotron {
+    padding-top: 120px;
+}
+
+}
 
 @media(max-width: 480px){
 	.header-right-links li{
@@ -295,5 +340,6 @@ background: rgba(255, 255, 255, 0.40);
 }
 .search-container {
     padding: 1em;
+    margin-top:10px;
 }
 }
