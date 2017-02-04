@@ -1,3 +1,5 @@
+
+<div>
 <div class="fluid-container">
   <div class="jumbotron search-jumbotron">
     <div class="row">
@@ -5,12 +7,11 @@
         <div class="container search-container">
           <form class="form-horizontal">
             <fieldset>
-
               <!-- Form Name -->
               <legend class="text-center">Find a Property</legend>
               <!-- Select Basic -->
               <div class="form-group">
-                <label class="col-md-4 control-label" for="selectbasic">Select Property Type</label>
+                <label class="col-md-4 control-label" for="selectbasic"> Property Type:</label>
                 <div class="col-md-8">
                   <select id="selectbasic" name="selectbasic" class="form-control">
                     <option value="1">Option one</option>
@@ -31,7 +32,7 @@
               <div class="form-group">
                 <label class="col-md-4 control-label" for="singlebutton"></label>
                 <div class="col-md-6">
-                  <button id="singlebutton" name="singlebutton" class="btn btn-danger">Search</button>
+                  <button id="singlebutton" name="singlebutton" class="btn btn-danger" routerLink="/search">Search</button>
                 </div>
               </div>
             </fieldset>
@@ -42,5 +43,8 @@
   </div>
     </div>
   </div>
+</div>
+
+<jll-featureproperty></jll-featureproperty>
 </div>
 

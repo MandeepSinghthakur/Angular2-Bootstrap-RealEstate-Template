@@ -15,13 +15,14 @@ var app_component_1 = require('./app.component');
 var header_component_1 = require('./header.component');
 var asidebar_component_1 = require('./asidebar.component');
 var homesearch_component_1 = require('./homesearch.component');
+var featureproperty_component_1 = require('./featureproperty.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, asidebar_component_1.AsideBarComponent, homesearch_component_1.HomeSearchComponent],
+            declarations: [app_component_1.AppComponent, header_component_1.HeaderComponent, asidebar_component_1.AsideBarComponent, homesearch_component_1.HomeSearchComponent, featureproperty_component_1.FeaturePropertyComponent],
             providers: [app_routing_1.appRoutingProviders],
             bootstrap: [app_component_1.AppComponent]
         }), 

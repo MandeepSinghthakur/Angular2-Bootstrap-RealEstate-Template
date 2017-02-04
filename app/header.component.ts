@@ -19,7 +19,7 @@ constructor() {
     $('header').toggleClass('open')
   }
   OpenSideBar(){
-  	$('.sidenav').toggleClass('nav-open');
+  	$('.sidenav').addClass('nav-open');
    
     
   }
